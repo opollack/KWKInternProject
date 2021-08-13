@@ -1,0 +1,46 @@
+.elc-product-details {
+    h2 {
+        font-family: Optima;
+        font-size: 26px;
+        color: #040a2b;
+        letter-spacing: normal;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        font-weight: lighter;
+    }
+
+}
+.tab-list {  
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+    display:flex;
+    justify-content: center;
+    font-family: "Akziden";
+    margin-bottom: 20px;
+    @include responsive(phone) {
+      flex-direction: column; 
+   }
+  }
+  
+  .tab-list-item {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: -10px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+  }
+  
+  .tab-list-active {
+    background-color: white;
+    border: solid #ccc;
+    border-width: 1px 1px 0 1px;
+    @include responsive(phone) {
+      border-width: 1px 1px 1px 1px;
+    }
+  }
+  .tab-content{
+    margin-bottom:50px;
+    display: flex;
+    line-height: 1.5em;
+    list-style-type:none;
+  }

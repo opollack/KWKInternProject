@@ -1,0 +1,150 @@
+.elc-product-overview {
+  //width: 40%;
+  padding: 90px 30px 0 90px;
+  float: left;
+  max-width: 600px;
+  @include responsive(phone) {
+    padding: 26px 30px 0 30px;
+ }
+
+  h4 {
+     font-family: Optima;
+     font-size: 32px;
+     color: #040a2b;
+    letter-spacing: .4px;
+    line-height: 1;
+    margin-bottom: 5px;
+    font-weight: 400;
+    @include responsive(phone) {
+      font-size: 21px; 
+   }
+  }
+
+  .product-after-pay{
+    width:25%;
+    background-color:aquamarine;
+    border-radius: 10px;
+    padding-left: 8px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  // Styles for stars
+  .product-review {
+    //empty stars
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top:10px;
+    
+    .stars-outer {
+      display: inline-block;
+      position: relative;
+      font-family: "Material Icons";
+      letter-spacing: -3px;
+      margin-inline-end:8px;
+    }
+
+    .stars-outer::before {
+      content: "\f0ec\f0ec\f0ec\f0ec\f0ec";
+      color: #7f7f7f;
+      
+    }
+
+    //filled in stars
+    .stars-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      
+    }
+
+    .stars-inner::before {
+      content: "\f0ec\f0ec\f0ec\f0ec\f0ec";
+      color: #000;
+      
+    }
+
+    .read-reviews {
+      font-family: Akziden;
+      font-weight: 700;
+      color: #040a2b;
+      opacity: 1;
+      font-size: 15px;
+      margin: 8px;
+    }
+  }
+
+  .product-short-description {
+    color: #040a2b;
+    font-size: 15px;
+    letter-spacing: .3px;
+    font-weight: 500;
+    font-family: Akziden;
+    line-height: 16px;
+    margin-bottom: 5%;
+  }
+
+  .product-size{
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .1px;
+    line-height: 16px;
+    border: 1px solid black;
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    position: relative;
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
+
+  .product-price{
+    font-family: Akziden;
+    font-weight: 700;
+    color: #040a2b;
+    opacity: 1;
+    font-size: 15px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .product-auto-replenish{
+    color: #040a2b;
+    font-family: Akziden;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-right: 55px;
+    text-transform: uppercase;
+  }
+
+  .replenish-button{
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    width: 5%;
+    font-family: Akziden;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 2%;
+  }
+
+.replenish-description{
+  font-size: 15px;
+  margin-top: 5px;
+  font-family: Akziden;
+  line-height: 1;
+  letter-spacing: .05em;
+  margin-bottom: 5px;
+}
+
+ // product-short-description
+}
